@@ -31,7 +31,7 @@
             <tr>
                 <th>Start</th>
                 <th>Finish</th>
-                <th>ID Customer</th>
+                <th>ID User</th>
             </tr>
             @php
                 $formData = session('formData');
