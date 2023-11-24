@@ -16,7 +16,7 @@ class UserFraudController extends Controller
      */
     public function index()
     {
-        $user = User_Fraud::all();
+        $user = User_Fraud::orderBy('id','asc')->paginate(10);
         return view('user.index', compact('user'));
     }
 

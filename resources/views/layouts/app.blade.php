@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fraud Tracking System Beta</title>
+    <style>
+        .btn-pagination {
+            padding: 8px 16px;
+            margin: 0 4px;
+            background-color: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn-pagination:hover {
+            background-color: #45a049;
+        }
+
+        .btn-pagination.active {
+            background-color: #2196f3;
+        }
+    </style>
 </head>
 <body>
     <header>
