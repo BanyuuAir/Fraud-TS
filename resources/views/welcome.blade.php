@@ -14,22 +14,22 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('user.index') }}">TAMBAH DATA USER</a>
+                <a class="nav-link" href="{{ route('user.index') }}">USER DATA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('activity.index') }}">TAMBAH DATA AKTIVITAS</a>
+                <a class="nav-link" href="{{ route('activity.index') }}">ACTIVITY DATA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('transaction.index') }}">TAMBAH DATA TRANSACTION</a>
+                <a class="nav-link" href="{{ route('transaction.index') }}">TRANSACTION DATA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('channel.index') }}">TAMBAH DATA CHANNEL</a>
+                <a class="nav-link" href="{{ route('channel.index') }}">TRANSACTION CHANNEL DATA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('activityType.index') }}">TAMBAH ACTIVITY TYPE</a>
+                <a class="nav-link" href="{{ route('activityType.index') }}">ACTIVITY TYPE DATA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('form') }}">BUAT SUMMARY</a>
+                <a class="nav-link" href="{{ route('form') }}">SUMMARY</a>
             </li>
         </ul>
     </div>
