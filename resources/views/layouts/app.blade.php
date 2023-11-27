@@ -180,6 +180,35 @@
                 transform: translate(-50%, -50%);
             }
         }
+
+        /* Style for the start-btn */
+        .start-btn {
+            position: absolute; /* Set position to absolute */
+            top: 30%; /* Position at 50% from the top */
+            left: 50%; /* Position at 50% from the left */
+            transform: translate(-50%, -50%); /* Center the button */
+            z-index: 2; /* Set a higher z-index to make it appear above other elements */
+        }
+
+        /* Style for the link inside start-btn */
+        .start-btn .link {
+            display: block; /* Make the link a block element */
+            text-align: center; /* Center the text inside the link */
+            text-decoration: none; /* Remove underline from the link */
+        }
+
+        /* Style for the image inside the link */
+        .start-btn .link img {
+            width: 250px; /* Set the width of the image */
+            height: auto; /* Maintain the aspect ratio */
+            cursor: pointer;
+            transition: transform 0.3s; /* Add a smooth transition effect on hover */
+        }
+
+        /* Hover effect for the image */
+        .start-btn .link:hover img {
+            transform: scale(0.9); /* Increase the size of the image on hover */
+        }
     </style>
     <!-- resources/views/layouts/app.blade.php -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

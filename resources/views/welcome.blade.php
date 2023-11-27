@@ -40,6 +40,13 @@
     <img class="background-image" src="{{ asset('img/wp.png') }}" alt="Background Image">
 </div>
 
+<!-- Start Button Section -->
+<div class="start-btn">
+    <a class="link" href="{{ route('user.index') }}">
+        <img class ="" src="{{ asset('img/start.png') }}" alt="Start Button">
+    </a>
+</div>
+
 <!-- Logo Image Section -->
 <div class="imgbox">
     <img class="center-fit" src='img/bg.png'>
