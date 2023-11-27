@@ -24,6 +24,7 @@ Route::get('/', function () {
 });
 
 Route::get('/welcome', 'App\Http\Controllers\WelcomeController@index')->name('welcome');
+Route::get('/penjelasan', 'App\Http\Controllers\PenjelasanController@index')->name('penjelasan');
 Route::resource('user', UserFraudController::class);
 Route::post('/user/import', 'App\Http\Controllers\UserFraudController@import')->name('user.import');
 Route::resource('activity', ActivityController::class);
