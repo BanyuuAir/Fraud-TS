@@ -57,21 +57,27 @@
             <div class="col-lg-12">
                 <nav role="navigation" aria-label="Pagination Navigation" class="flex items-center justify-between">
                     <div class="flex justify-start">
-                        <a href="{{ $user->previousPageUrl() }}" class="btn-pagination" aria-label="Previous">&laquo; Previous</a>
+                        <a href="{{ $user->previousPageUrl() }}" class="btn-pagination" aria-label="Previous"><</a>
                         @foreach(range(1, $user->lastPage()) as $i)
                             <a href="{{ $user->url($i) }}" class="btn-pagination {{ $user->currentPage() == $i ? 'active' : '' }}" aria-label="Go to page {{ $i }}">{{ $i }}</a>
                         @endforeach
-                        <a href="{{ $user->nextPageUrl() }}" class="btn-pagination" aria-label="Next">Next &raquo;</a>
+                        <a href="{{ $user->nextPageUrl() }}" class="btn-pagination" aria-label="Next">></a>
                     </div>
                 </nav>
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="d-flex justify-content-between align-items-center">
-                    <a class="btn btn-warning" href="{{ route('welcome') }}">Home</a>
-                </div>
-            </div>
-        </div>
+
+    <!-- Sub Button Section -->
+    <div class="sub-btn">
+        <!-- <a class="sub-link" href="{{ route('welcome') }}">
+            <img class ="" src="{{ asset('img/previous.png') }}" alt="Previous Button">
+        </a> -->
+        <a class="sub-link" href="{{ route('welcome') }}">
+            <img class ="" src="{{ asset('img/home.png') }}" alt="Home Button">
+        </a>
+        <a class="sub-link" href="{{ route('activity.index') }}">
+            <img class ="" src="{{ asset('img/next.png') }}" alt="Next Button">
+        </a>
+    </div>
 @endsection

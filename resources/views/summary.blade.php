@@ -93,12 +93,14 @@
             </tr>
         </table>
     @endif
-    <div class="row">
-            <div class="col-lg-12">
-                <div class="d-flex justify-content-between align-items-center">
-                    <a class="btn btn-warning" href="{{ route('welcome') }}">Home</a>
-                </div>
-            </div>
+    <!-- Sub Button Section -->
+    <div class="sub-btn">
+        <a class="sub-link" href="{{ route('transaction.index') }}">
+            <img class ="" src="{{ asset('img/previous.png') }}" alt="Previous Button">
+        </a>
+        <a class="sub-link" href="{{ route('welcome') }}">
+            <img class ="" src="{{ asset('img/home.png') }}" alt="Home Button">
+        </a>
     </div>
 </div>
 @endsection

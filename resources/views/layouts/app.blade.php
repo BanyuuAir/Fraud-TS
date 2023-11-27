@@ -209,6 +209,36 @@
         .start-btn .link:hover img {
             transform: scale(0.9); /* Increase the size of the image on hover */
         }
+
+        /* Style for the sub-btn container */
+        .sub-btn {
+            position: fixed; /* Set position to fixed */
+            bottom: 10px; /* Set distance from the bottom */
+            left: 50%; /* Set position to the center horizontally */
+            transform: translateX(-50%); /* Adjust for centering */
+            z-index: 2; /* Set a higher z-index to make it appear above other elements */
+            display: flex; /* Use flexbox to organize items in a row */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        /* Style for the sub-link inside sub-btn */
+        .sub-btn .sub-link {
+            display: inline-block; /* Make the link an inline-block element to be in a row */
+            margin-right: 10px; /* Add some spacing between the links if needed */
+            text-decoration: none; /* Remove underline from the link */
+        }
+
+        /* Style for the image inside the sub-link */
+        .sub-btn .sub-link img {
+            width: 110px; /* Set the width of the image */
+            height: auto; /* Maintain the aspect ratio */
+            transition: transform 0.3s; /* Add a smooth transition effect on hover */
+        }
+
+        /* Hover effect for the image */
+        .sub-btn .sub-link:hover img {
+            transform: scale(1.1); /* Increase the size of the image on hover */
+        }
     </style>
     <!-- resources/views/layouts/app.blade.php -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
