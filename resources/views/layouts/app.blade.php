@@ -239,6 +239,35 @@
         .sub-btn .sub-link:hover img {
             transform: scale(1.1); /* Increase the size of the image on hover */
         }
+
+        /* Style for the add-btn container */
+        .add-btn {
+            left: 40%; /* Set position to the center horizontally */
+            position: relative; /* Set position to relative */
+            z-index: 2;
+            margin-top: 10px; /* Adjust the top margin as needed */
+            margin-bottom: 10px; /* Adjust the bottom margin as needed */
+        }
+
+        /* Style for the add-link inside add-btn */
+        .add-btn .add-link {
+            display: inline-block; /* Make the link an inline-block element */
+            text-align: center; /* Center the text inside the link */
+            text-decoration: none; /* Remove underline from the link */
+        }
+
+        /* Style for the image inside the add-link */
+        .add-btn .add-link img {
+            width: auto; /* Set the width of the image */
+            height: 50px; /* Maintain the aspect ratio */
+            cursor: pointer;
+            transition: transform 0.3s; /* Add a smooth transition effect on hover */
+        }
+
+        /* Hover effect for the image */
+        .add-btn .add-link:hover img {
+            transform: scale(0.9); /* Increase the size of the image on hover */
+        }
     </style>
     <!-- resources/views/layouts/app.blade.php -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

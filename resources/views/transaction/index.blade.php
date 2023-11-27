@@ -2,15 +2,11 @@
 
 @section('content')
 <div class="container mt-2">
-        <div class="row">
-            <div class="col-lg-12 margin-tb">
-                <div class="pull-left">
-                    <h2>Data Transaction</h2>
-                </div>
-                <div class="pull-right mb-2">
-                    <a class="btn btn-success" href="{{ route('transaction.create') }}"> Masukan Data Transaction</a>
-                </div>
-            </div>
+        <!-- Add Button Section -->
+        <div class="add-btn">
+            <a class="add-link" href="{{ route('transaction.create') }}">
+                <img class="" src="{{ asset('img/add_data.png') }}" alt="Add Button">
+            </a>
         </div>
         @if ($message = Session::get('success'))
             <div class="alert alert-success">
