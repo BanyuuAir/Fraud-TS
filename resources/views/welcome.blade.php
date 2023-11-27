@@ -1,28 +1,84 @@
 @extends('layouts.app')
 
 @section('content')
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
-        <h1 style="font-size: 75px; text-align: center;">Fraud Tracking System (beta)</h1>
-        <br><br>
-        <div style="display: flex; flex-direction: row; justify-content: center; width: 80%; hight: 10%;">
-            <div style="margin: 5px;">
-                <a class="btn btn-danger btn-lg" href="{{ route('user.index') }}">Tambah Data User</a>
-            </div>
-            <div style="margin: 5px;">
-                <a class="btn btn-primary btn-lg" href="{{ route('activity.index') }}">Tambah Data Aktivitas</a>
-            </div>
-            <div style="margin: 5px;">
-                <a class="btn btn-warning btn-lg" href="{{ route('transaction.index') }}">Tambah Data Transaction</a>
-            </div>
-            <div style="margin: 5px;">
-                <a class="btn btn-primary btn-lg" href="{{ route('channel.index') }}">Tambah Data Channel</a>
-            </div>
-            <div style="margin: 5px;">
-                <a class="btn btn-secondary btn-lg" href="{{ route('activityType.index') }}">Tambah Data Activity Type</a>
-            </div>
-            <div style="margin: 5px;">
-                <a class="btn btn-success btn-lg" href="{{ route('form') }}">Buat Summary</a>
-            </div>
-        </div>
+    <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="{{ route('penjelasan') }}">
+        <img src="img/logo2.png" alt="Fraud Tracking Logo" width="200" height="100">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('user.index') }}">TAMBAH DATA USER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('activity.index') }}">TAMBAH DATA AKTIVITAS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('transaction.index') }}">TAMBAH DATA TRANSACTION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('channel.index') }}">TAMBAH DATA CHANNEL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('activityType.index') }}">TAMBAH ACTIVITY TYPE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('form') }}">BUAT SUMMARY</a>
+            </li>
+        </ul>
     </div>
+</nav>
+
+<!-- Image Background Section -->
+<div class="video-background">
+    <img class="background-image" src="{{ asset('img/wp.png') }}" alt="Background Image">
+</div>
+
+<!-- Logo Image Section -->
+<div class="imgbox">
+    <img class="center-fit" src='img/bg.png'>
+</div>
+
+<!-- Rain Animation Section -->
+<div class="rain-container">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const rainContainer = document.querySelector('.rain-container');
+            const maxRaindrops = 15; // Jumlah maksimum raindrop
+
+            function createRaindrop() {
+                if (rainContainer.childElementCount < maxRaindrops) {
+                    const raindrop = document.createElement('div');
+                    raindrop.classList.add('raindrop');
+                    raindrop.style.left = `${Math.random() * 100}vw`;
+                    raindrop.style.animationDuration = `${Math.random() * 2 + 1}s`;
+                    rainContainer.appendChild(raindrop);
+
+                    // Menghapus elemen setelah selesai animasi
+                    raindrop.addEventListener('animationend', function() {
+                        rainContainer.removeChild(raindrop);
+                    });
+                }
+            }
+
+            // Membuat raindrop setiap 300ms
+            setInterval(createRaindrop, 300);
+        });
+    </script>
+</div>
+
+
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 @endsection
+
