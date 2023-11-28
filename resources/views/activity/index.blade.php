@@ -1,6 +1,37 @@
 @extends('layouts.app')
 
 @section('content')
+<nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('user.index') }}">USER DATA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('activity.index') }}">ACTIVITY DATA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('transaction.index') }}">TRANSACTION DATA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('channel.index') }}">TRANSACTION CHANNEL DATA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('activityType.index') }}">ACTIVITY TYPE DATA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('form') }}">SUMMARY</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<img class="header" src="img/act.png" alt="Logo Halaman">
+
 <div class="container mt-2">
         <!-- Add Button Section -->
         <div class="add-btn">

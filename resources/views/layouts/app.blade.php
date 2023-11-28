@@ -45,6 +45,8 @@
             top: 0;
             width: 100%;
             transition: background-color 0.5s ease-in-out;
+            z-index: 2;
+            margin-top: 10px;
         }
 
         .navbar .navbar-brand {
@@ -292,6 +294,13 @@
         /* Hover effect for the image */
         .small-btn .small-link:hover img {
             transform: scale(0.9); /* Increase the size of the image on hover */
+        }
+
+        /* Header */
+        .header {
+            position: relative;
+            top: auto;
+            width: 100%;
         }
     </style>
     <!-- resources/views/layouts/app.blade.php -->
