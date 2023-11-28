@@ -33,12 +33,16 @@
 <img class="header" src="img/trx.png" alt="Logo Halaman">
 
 <div class="container mt-2">
+    <div class="container mt-2 text-center">
         <!-- Add Button Section -->
         <div class="add-btn">
-            <a class="add-link" href="{{ route('transaction.create') }}">
+            <a class="add-link" href="{{ route('user.create') }}">
                 <img class="" src="{{ asset('img/add_data.png') }}" alt="Add Button">
             </a>
         </div>
+        <!-- Rest of the code remains unchanged -->
+        <!-- ... -->
+    </div>
         @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 <p>{{ $message }}</p>

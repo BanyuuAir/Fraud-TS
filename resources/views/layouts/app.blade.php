@@ -244,9 +244,7 @@
 
         /* Style for the add-btn container */
         .add-btn {
-            left: 40%; /* Set position to the center horizontally */
             position: relative; /* Set position to relative */
-            z-index: 2;
             margin-top: 10px; /* Adjust the top margin as needed */
             margin-bottom: 10px; /* Adjust the bottom margin as needed */
         }
