@@ -36,13 +36,27 @@
                         <td>{{ $data->email }}</td>
                         <td>{{ $data->phone }}</td>
                         <td>
-                            <form action="{{ route('user.destroy', $data->id) }}" method="Post">
-                                <a class="btn btn-info" href="{{ route('user.show', $data->id) }}">Show</a>
-                                <a class="btn btn-primary" href="{{ route('user.edit', $data->id) }}">Edit</a>
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Delete</button>
-                            </form>
+                            <div class="small-btn">
+                                <form action="{{ route('user.destroy', $data->id) }}" method="POST">
+                                    <!-- Show Button -->
+                                    <a class="small-link" href="{{ route('user.show', $data->id) }}">
+                                        <img src="{{ asset('img/show.png') }}" alt="Show Button" title="Show">
+                                    </a>
+
+                                    <!-- Edit Button -->
+                                    <a class="small-link" href="{{ route('user.edit', $data->id) }}">
+                                        <img src="{{ asset('img/edit.png') }}" alt="Edit Button" title="Edit">
+                                    </a>
+
+                                    @csrf
+                                    @method('DELETE')
+
+                                    <!-- Delete Button -->
+                                    <button class="small-link" type="submit" style="cursor: pointer; background: none; border: none;">
+                                        <img src="{{ asset('img/delete.png') }}" alt="Delete Button" title="Delete">
+                                    </button>
+                                </form>
+                            </div>
                         </td>
                     </tr>
                     <?php $idx++; ?>
