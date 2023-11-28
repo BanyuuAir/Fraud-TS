@@ -57,7 +57,7 @@
                     <th>Account Number</th>
                     <th>Email</th>
                     <th>Phone</th>
-                    <th width="280px">Aksi</th>
+                    <th width="125px">Aksi</th>
                 </tr>
             </thead>
             <tbody> 

@@ -36,7 +36,7 @@
     <div class="container mt-2 text-center">
         <!-- Add Button Section -->
         <div class="add-btn">
-            <a class="add-link" href="{{ route('user.create') }}">
+            <a class="add-link" href="{{ route('transaction.create') }}">
                 <img class="" src="{{ asset('img/add_data.png') }}" alt="Add Button">
             </a>
         </div>
@@ -58,7 +58,7 @@
                     <th>Amount</th>
                     <th>Account Destination</th>
                     <th>Channel</th>
-                    <th width="280px">Aksi</th>
+                    <th width="125px">Aksi</th>
                 </tr>
             </thead>
             <tbody> 
