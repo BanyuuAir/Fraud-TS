@@ -6,7 +6,9 @@
             <div class="col-lg-12">
                 <div class="d-flex justify-content-between align-items-center">
                     <h2>Detail User</h2>
-                    <a class="btn btn-primary" href="{{ route('user.index') }}">Back</a>
+                    <a class="btn-back" href="{{ route('user.index') }}">
+                        <img class ="" src="{{ asset('img/back.png') }}" alt="Back Button">
+                    </a>
                 </div>
             </div>
         </div>

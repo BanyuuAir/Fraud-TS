@@ -6,7 +6,9 @@
             <div class="col-lg-12">
                 <div class="d-flex justify-content-between align-items-center">
                     <h2>Detail Type Channel</h2>
-                    <a class="btn btn-primary" href="{{ route('channel.index') }}">Back</a>
+                    <a class="btn-back" href="{{ route('channel.index') }}">
+                        <img class ="" src="{{ asset('img/back.png') }}" alt="Back Button">
+                    </a>
                 </div>
             </div>
         </div>

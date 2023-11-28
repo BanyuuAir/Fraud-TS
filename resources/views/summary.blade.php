@@ -48,7 +48,9 @@
             <label for="acc">ID User:</label>
             <input type="text" class="form-control" name="acc" required>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn-back" style="cursor: pointer; background: none; border: none;">
+                <img class ="" src="{{ asset('img/submit.png') }}" alt="Submit Button">
+            </button>
     </form>
     @if(session('success'))
         <div class="alert alert-success mt-3">

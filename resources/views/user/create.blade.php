@@ -5,8 +5,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Tambah User</h2>
-                    <a class="btn btn-primary" href="{{ route('user.index') }}">Back</a>
+                    <h2>ADD USER</h2>
+                    <a class="btn-back" href="{{ route('user.index') }}">
+                        <img class ="" src="{{ asset('img/back.png') }}" alt="Back Button">
+                    </a>
                 </div>
             </div>
         </div>
@@ -49,7 +51,9 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn-back" style="cursor: pointer; background: none; border: none;">
+                        <img class ="" src="{{ asset('img/submit.png') }}" alt="Submit Button">
+                    </button>
                 </div>
             </div>
         </form>
@@ -70,11 +74,13 @@
             </div>
             <div class="row">
             <div class="col-lg-12">
-            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Upload CSV</button>
+                        <button type="submit" class="btn-back" style="cursor: pointer; background: none; border: none;">
+                            <img class ="" src="{{ asset('img/upload.png') }}" alt="upload Button">
+                        </button>
                     </div>
-            </div>
+                </div>
             </div>
             </div>
         </form>

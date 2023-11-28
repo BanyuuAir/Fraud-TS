@@ -301,6 +301,17 @@
             width: 100%;
         }
 
+        /* Style for the image inside the sub-link */
+        .btn-back img {
+            width: auto; /* Set the width of the image */
+            height: 40px; /* Maintain the aspect ratio */
+            transition: transform 0.3s; /* Add a smooth transition effect on hover */
+        }
+
+        /* Hover effect for the image */
+        .btn-back:hover img {
+            transform: scale(1.1); /* Increase the size of the image on hover */
+        }
     </style>
     <!-- resources/views/layouts/app.blade.php -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
