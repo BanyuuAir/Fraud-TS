@@ -12,6 +12,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
 
         /* Button Styles */
         .btn-pagination {
@@ -318,6 +319,17 @@
             -webkit-background-clip: text;
             color: transparent;
             font-family: 'Segoe UI Black';
+        }
+
+        .containersummary {
+            width: 60%;
+            padding: 20px;
+            border: 1px solid #cccccc00;
+            margin-left: auto;
+            margin-top: 20px;
+            margin-right: auto; 
+            margin-bottom: 20px;
+            background-color: #fff;
         }
     </style>
     <!-- resources/views/layouts/app.blade.php -->

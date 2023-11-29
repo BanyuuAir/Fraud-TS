@@ -30,9 +30,13 @@
     </div>
 </nav>
 
+<!-- Image Background Section -->
+<div class="video-background">
+    <img class="background-image" src="{{ asset('img/wp.png') }}" alt="Background Image">
+</div>
 <img class="header" src="{{ asset('img/summary.png') }}" alt="Logo Halaman">
 
-<div class="container">
+<div class="containersummary">
     <div class="h2-font">
         <i> <h2>Insert Parameter Data</h2></i>
     </div>
@@ -50,16 +54,17 @@
             <label for="acc">ID User:</label>
             <input type="text" class="form-control" name="acc" required>
         </div>
-            <button type="submit" class="btn-back" style="cursor: pointer; background: none; border: none;">
-                <img class ="" src="{{ asset('img/submit.png') }}" alt="Submit Button">
-            </button>
+        <button type="submit" class="btn-back" style="cursor: pointer; background: none; border: none;" >
+            <img class ="" src="{{ asset('img/submit.png') }}" alt="Submit Button">
+        </button>
     </form>
+
     @if(session('success'))
         <div class="alert alert-success mt-3">
             {{ session('success') }}
         </div>
     @endif
-
+    
     @if(session('formData'))
         <div class="h2-font">
             <i> <h2>Result</h2></i>
@@ -81,6 +86,7 @@
             </tr>
         </table>
     @endif
+
     <div class="h2-font">
         <i> <h2>Summary</h2></i>
     </div>
@@ -96,6 +102,7 @@
             </tr>
         </table>
     @endif
+
     @if(isset($activity))
         <h5>Data Aktivitas:</h5>
         <table class="table">
@@ -114,6 +121,7 @@
             </tr>
         </table>
     @endif
+
     @if(isset($channel))
         <h5>Data Transaksi:</h5>
         <table class="table">
@@ -132,7 +140,9 @@
                 @endforeach
             </tr>
         </table>
+    </div>
     @endif
+
     <!-- Sub Button Section -->
     <div class="sub-btn">
         <a class="sub-link" href="{{ route('transaction.index') }}">
