@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<img class="header" src="img/trx_cd.png" alt="Logo Halaman">
+<img class="header" src="{{ asset('img/summary.png') }}" alt="Logo Halaman">
 
 <div class="container mt-2">
     <div class="container mt-2 text-center">
@@ -51,11 +51,11 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Channel Code</th>
-                    <th>Channel Type</th>
-                    <th>Channel Descripton</th>
-                    <th width="125px">Aksi</th>
+                    <th>NO</th>
+                    <th>CHANNEL CODE</th>
+                    <th>CHANNEL TYPE</th>
+                    <th>CHANNEL DESCRIPTION</th>
+                    <th width="125px">ACTION</th>
                 </tr>
             </thead>
             <tbody> 

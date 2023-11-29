@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<img class="header" src="img/trx.png" alt="Logo Halaman">
+<img class="header" src="{{ asset('img/summary.png') }}" alt="Logo Halaman">
 
 <div class="container mt-2">
     <div class="container mt-2 text-center">
@@ -51,14 +51,14 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>No</th>
-                    <th>User ID</th>
-                    <th>waktu</th>
-                    <th>Account Number</th>
-                    <th>Amount</th>
-                    <th>Account Destination</th>
-                    <th>Channel</th>
-                    <th width="125px">Aksi</th>
+                    <th>NO</th>
+                    <th>USER ID</th>
+                    <th>TIME</th>
+                    <th>ACCOUNT NUMBER</th>
+                    <th>AMOUNT</th>
+                    <th>ACCOUNT DESTINATON</th>
+                    <th>CHANNEL</th>
+                    <th width="125px">ACTION</th>
                 </tr>
             </thead>
             <tbody> 

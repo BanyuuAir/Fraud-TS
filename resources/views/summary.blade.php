@@ -30,10 +30,12 @@
     </div>
 </nav>
 
-<img class="header" src="img/summary.png" alt="Logo Halaman">
+<img class="header" src="{{ asset('img/summary.png') }}" alt="Logo Halaman">
 
 <div class="container">
-    <h2>Input Data</h2>
+    <div class="h2-font">
+        <i> <h2>Insert Parameter Data</h2></i>
+    </div>
     <form method="post" action="{{ route('process') }}">
         @csrf
         <div class="form-group">
@@ -59,7 +61,9 @@
     @endif
 
     @if(session('formData'))
-        <h2>Data Yang Telah Diinput:</h2>
+        <div class="h2-font">
+            <i> <h2>Result</h2></i>
+        </div>
         <table class="table">
             <tr>
                 <th>Start</th>
@@ -77,7 +81,10 @@
             </tr>
         </table>
     @endif
-    <h2>Summary:</h2><br>
+    <div class="h2-font">
+        <i> <h2>Summary</h2></i>
+    </div>
+    <br>
     @if(isset($user))
         <h5>Data User:</h5>
         <table class="table">

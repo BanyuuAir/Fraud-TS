@@ -5,7 +5,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Detail Type Aktivitas</h2>
+                    <div class="h2-font">
+                       <i> <h2>Detail Activity Type Data</h2></i>
+                    </div>
                     <a class="btn-back" href="{{ route('activityType.index') }}">
                         <img class ="" src="{{ asset('img/back.png') }}" alt="Back Button">
                     </a>

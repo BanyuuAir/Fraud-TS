@@ -312,6 +312,13 @@
         .btn-back:hover img {
             transform: scale(1.1); /* Increase the size of the image on hover */
         }
+
+        .h2-font {
+            background: linear-gradient(to right, #fd4556, #a30010);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-family: 'Segoe UI Black';
+        }
     </style>
     <!-- resources/views/layouts/app.blade.php -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

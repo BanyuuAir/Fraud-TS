@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<img class="header" src="img/act_cd.png" alt="Logo Halaman">
+<img class="header" src="{{ asset('img/summary.png') }}" alt="Logo Halaman">
 
 <div class="container mt-2">
     <div class="container mt-2 text-center">
@@ -52,10 +52,10 @@
             <thead>
                 <tr>
                     <!-- <th>No</th> -->
-                    <th>Activity ID</th>
-                    <th>Activity Type</th>
-                    <th>Activity Descripton</th>
-                    <th width="125px">Aksi</th>
+                    <th>ACTIVITY ID</th>
+                    <th>ACTIVITY TYPE</th>
+                    <th>ACTIVITY DESCRIPTION</th>
+                    <th width="125px">ACTION</th>
                 </tr>
             </thead>
             <tbody> 

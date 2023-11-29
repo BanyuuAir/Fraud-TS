@@ -5,7 +5,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Edit Data Aktivitas</h2>
+                    <div class="h2-font">
+                       <i> <h2>Edit Activity Data</h2></i>
+                    </div>
                     <a class="btn-back" href="{{ route('activity.index') }}">
                         <img class ="" src="{{ asset('img/back.png') }}" alt="Back Button">
                     </a>
@@ -29,7 +31,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="time">Waktu:</label>
+                        <label for="time">Time:</label>
                         <input type="datetime-local" name="time" value="{{ $activity->time }}" class="form-control" id="time" placeholder="time">
                     </div>
                 </div>

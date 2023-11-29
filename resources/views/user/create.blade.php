@@ -5,7 +5,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>ADD USER</h2>
+                    <div class="h2-font">
+                       <i> <h2>Add User Data</h2></i>
+                    </div>
                     <a class="btn-back" href="{{ route('user.index') }}">
                         <img class ="" src="{{ asset('img/back.png') }}" alt="Back Button">
                     </a>
@@ -28,7 +30,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="username">Nama:</label>
+                        <label for="username">Username:</label>
                         <input type="text" name="username" class="form-control" id="username" placeholder="username">
                     </div>
                 </div>
@@ -66,7 +68,9 @@
             <div class="col-lg-12">
                 <div class="d-flex justify-content-between align-items-center">
                 <div class="form-group">
-                        <label for="csv_file">Upload File CSV:</label>
+                    <div class="h2-font">
+                       <i> <h2><label for="csv_file">Upload CSV File:</label></h2></i>
+                    </div>
                         <input type="file" name="csv_file" class="form-control-file" id="csv_file" accept=".csv">
                 </div>
                 </div>
