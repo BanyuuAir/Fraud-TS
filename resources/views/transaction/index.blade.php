@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<img class="header" src="{{ asset('img/summary.png') }}" alt="Logo Halaman">
+<img class="header" src="{{ asset('img/trx.png') }}" alt="Logo Halaman">
 
 <div class="container mt-2">
     <div class="container mt-2 text-center">
