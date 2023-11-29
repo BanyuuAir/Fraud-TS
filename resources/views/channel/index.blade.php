@@ -48,7 +48,8 @@
                 <p>{{ $message }}</p>
             </div>
         @endif
-        <table class="table table-bordered">
+        <div class="table-container">
+            <table class="table table-bordered" id="myTable">
             <thead>
                 <tr>
                     <th>NO</th>
@@ -94,19 +95,6 @@
                 @endforeach
             </tbody>
         </table>
-        <div class="row">
-            <div class="col-lg-12">
-                <nav role="navigation" aria-label="Pagination Navigation" class="flex items-center justify-between">
-                    <div class="flex justify-start">
-                        <a href="{{ $channel->previousPageUrl() }}" class="btn-pagination" aria-label="Previous"><</a>
-                        @foreach(range(1, $channel->lastPage()) as $i)
-                            <a href="{{ $channel->url($i) }}" class="btn-pagination {{ $channel->currentPage() == $i ? 'active' : '' }}" aria-label="Go to page {{ $i }}">{{ $i }}</a>
-                        @endforeach
-                        <a href="{{ $channel->nextPageUrl() }}" class="btn-pagination" aria-label="Next">></a>
-                    </div>
-                </nav>
-            </div>
-        </div>
 
     <!-- Sub Button Section -->
     <div class="sub-btn">
@@ -120,4 +108,15 @@
             <img class ="" src="{{ asset('img/next.png') }}" alt="Next Button">
         </a> -->
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    
+    <!-- Masukkan ini di bagian head HTML Anda -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.2.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 @endsection

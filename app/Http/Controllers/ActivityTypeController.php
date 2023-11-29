@@ -17,7 +17,7 @@ class ActivityTypeController extends Controller
      */
     public function index()
     {
-        $activityType = ActivityType::orderBy('id','asc')->paginate(10);
+        $activityType = ActivityType::all();
         return view('activityType.index', compact('activityType'));
     }
 

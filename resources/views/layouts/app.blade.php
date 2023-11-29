@@ -331,6 +331,51 @@
             margin-bottom: 20px;
             background-color: #fff;
         }
+
+        /* Reset some default styles */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table thead th {
+    text-align: center; /* Center the text */
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Add some shadows for a flat look */
+.table-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
     </style>
     <!-- resources/views/layouts/app.blade.php -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
