@@ -217,17 +217,17 @@
         .sub-btn {
             position: fixed; /* Set position to fixed */
             bottom: 10px; /* Set distance from the bottom */
-            left: 50%; /* Set position to the center horizontally */
-            transform: translateX(-50%); /* Adjust for centering */
+            right: 10px; /* Set distance from the right */
             z-index: 2; /* Set a higher z-index to make it appear above other elements */
-            display: flex; /* Use flexbox to organize items in a row */
-            justify-content: center; /* Center items horizontally */
+            display: flex; /* Use flexbox to organize items in a column */
+            flex-direction: column; /* Arrange items in a column */
+            align-items: flex-end; /* Align items to the right */
         }
 
         /* Style for the sub-link inside sub-btn */
         .sub-btn .sub-link {
-            display: inline-block; /* Make the link an inline-block element to be in a row */
-            margin-right: 10px; /* Add some spacing between the links if needed */
+            display: inline-block; /* Make the link an inline-block element */
+            margin-bottom: 10px; /* Add some spacing between the links if needed */
             text-decoration: none; /* Remove underline from the link */
         }
 
@@ -333,49 +333,55 @@
         }
 
         /* Reset some default styles */
-.table-container {
-    width: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-}
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+        }
 
-.table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #212529;
-}
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1rem;
+            color: #212529;
+        }
 
-.table-bordered {
-    border: 1px solid #dee2e6;
-}
+        .table-bordered {
+            border: 1px solid #dee2e6;
+        }
 
-.table th,
-.table td {
-    padding: 0.75rem;
-    vertical-align: top;
-    border-top: 1px solid #dee2e6;
-}
+        .table th,
+        .table td {
+            padding: 0.75rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+        }
 
-.table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
-}
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+        }
 
-.table tbody + tbody {
-    border-top: 2px solid #dee2e6;
-}
+        .table tbody + tbody {
+            border-top: 2px solid #dee2e6;
+        }
 
-.table thead th {
-    text-align: center; /* Center the text */
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
-}
+        .table thead th {
+            text-align: center; /* Center the text */
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+        }
 
-/* Add some shadows for a flat look */
-.table-container {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        /* Add some shadows for a flat look */
+        .table-container {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
+        .h5-font {
+            background: linear-gradient(to right, #00baba, #000000);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-family: 'Segoe UI Black';
+        }
     </style>
     <!-- resources/views/layouts/app.blade.php -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -38,7 +38,7 @@
 
 <div class="containersummary">
     <div class="h2-font">
-        <i> <h2>Insert Parameter Data</h2></i>
+    <center><i><h2>Insert Parameter Data</h2></i></center>
     </div>
     <form method="post" action="{{ route('process') }}">
         @csrf
@@ -54,11 +54,13 @@
             <label for="acc">ID User:</label>
             <input type="text" class="form-control" name="acc" required>
         </div>
+        <center>
         <button type="submit" class="btn-back" style="cursor: pointer; background: none; border: none;" >
             <img class ="" src="{{ asset('img/submit.png') }}" alt="Submit Button">
         </button>
+        </center>
     </form>
-
+    <br><br>
     @if(session('success'))
         <div class="alert alert-success mt-3">
             {{ session('success') }}
@@ -67,7 +69,7 @@
     
     @if(session('formData'))
         <div class="h2-font">
-            <i> <h2>Result</h2></i>
+            <center><i><h2>Result</h2></i></center>
         </div>
         <table class="table">
             <tr>
@@ -88,11 +90,12 @@
     @endif
 
     <div class="h2-font">
-        <i> <h2>Summary</h2></i>
+    <center><i><h2>Summary</h2></i></center>
     </div>
-    <br>
     @if(isset($user))
+    <div class="h5-font">
         <h5>Data User:</h5>
+    </div>
         <table class="table">
             <tr>
                 <li>Account Number : {{ $user->account_number }}</li><p>
@@ -104,7 +107,9 @@
     @endif
 
     @if(isset($activity))
+    <div class="h5-font">
         <h5>Data Aktivitas:</h5>
+    </div>
         <table class="table">
             <tr>
                 @foreach($activity as $activities)
@@ -123,7 +128,9 @@
     @endif
 
     @if(isset($channel))
+    <div class="h5-font">
         <h5>Data Transaksi:</h5>
+    </div>
         <table class="table">
             <tr>
                 @foreach($channel as $channels)  
