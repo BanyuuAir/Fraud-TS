@@ -51,7 +51,7 @@
         <div class="table-container">
             <table class="table table-bordered" id="myTable">
             <thead>
-                <tr>
+                <tr style="background-color: black; color: white;">
                     <th>NO</th>
                     <th>CHANNEL CODE</th>
                     <th>CHANNEL TYPE</th>

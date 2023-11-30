@@ -51,8 +51,8 @@
         <div class="table-container">
             <table class="table table-bordered" id="myTable">
             <thead>
-                <tr>
-                    <th>No</th>
+                <tr style="background-color: black; color: white;">
+                    <th>NO</th>
                     <th>USER ID</th>
                     <th>TIME</th>
                     <th>ACTIVITY</th>
