@@ -53,7 +53,7 @@
             <thead>
                 <tr style="background-color: black; color: white;">
                     <th>NO</th>
-                    <th>USER ID</th>
+                    <th>USER-ID</th>
                     <th>TIME</th>
                     <th>ACCOUNT NUMBER</th>
                     <th>AMOUNT</th>
